@@ -1,1 +1,222 @@
 
+body {margin: 0%; background-color: #160020;
+  
+}
+
+
+.main, .nav {display: block;  font-family: "Josefin Sans", serif;   }
+
+
+.josefin-sans-uniquifier {
+   font-family: "Josefin Sans", serif;
+   font-optical-sizing: auto;
+   font-weight: weight;
+   font-style: normal;
+   color: #5c100a
+ }
+
+
+.main {
+width: 71%; 
+background-color: #160020;
+margin-left: 26%;
+padding: 10px;
+margin-top: 0px;
+height: 100%;
+
+
+}
+/*----Sections of the Page----*/
+p {
+margin: 15px;
+}
+/*----Nav----*/
+.nav {
+border:1px;
+border-style:solid;
+border-right:white;
+text-align: center;
+ width: 25%;
+ height: 100%;
+ background-color: #1b1b1b;
+ position: fixed;
+ left: 0px;
+ top:0px;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+
+.nav ul {
+text-align: center;
+   list-style-type: none;
+   overflow: hidden;
+   margin-left: auto;
+   margin-right:auto;
+   top:15%;
+  
+  
+   border: 2px solid;
+}
+
+
+.nav li {
+padding: 15%;
+left:3%
+
+
+
+
+}
+
+
+.nav a {
+   display: block;
+   width: auto;
+   text-align: center;
+   padding: 0px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #665665;
+   border-style:solid;
+   border-top: 5px;
+   border-left: 5px;
+   border-right: 5px;
+   padding:20%;
+  
+  
+}
+/*----Cell----*/
+a:hover {
+color: #a5a5a5;
+margin: 2%;
+}
+/*----Table----*/
+.Table{
+display:table;
+width: 90%;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+border-style:style;
+
+
+border-radius:5%;
+}
+.Row{
+display:table-row;
+
+
+}
+.Cell{
+margin:10%;
+height:10%;
+display:table-cell;
+margin-left: auto;
+margin-right: auto;
+}
+.Cells{
+   margin:0%;
+   height:10%;
+   display:table-cell;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #665665;
+
+
+
+}
+/*----Table----*/
+
+
+tr:nth-child(even) {
+   background: #B2E0B2;
+   width: 15%;
+}
+
+
+Cell2{
+   margin:10%;
+   height:10%;
+   display:table-cell;
+  
+   margin-left: auto;
+   margin-right: auto;
+   }
+   /*----Table----*/
+  
+   tr:nth-child(even) {
+       background: #B2E0B2;
+       width: 15%;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+td:nth-child(1) {
+   width: 70%;
+}
+
+
+
+
+
+
+.main h1{
+   padding-top: 20%;
+text-align: center;
+margin: 5%;
+padding:0px;
+left:45%;
+color: #402d53;
+font-size:500%;
+
+
+}
+
+
+p{
+color: rgb(220, 210, 210);
+text-align: center;
+
+
+}
+
+
+.victim {
+ 
+       display: table;
+       border: 1px dotted rgb(217,237,249);
+       background-color: rgba(217,237,249, .4);
+       width: 80%;
+       height: 30%;
+       margin-top: 50px;
+       margin-bottom: 50px;
+       margin-left: auto;
+       margin-right: auto;
+       clear: both;
+       padding: 0%;
+background-color: #665665;
+}
+body h2{
+   text-align: center;
+   font-size: 200%;
+   border-bottom: #121212;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   border-style: solid;
+   padding-bottom: 5%;
+   color: #402d53;
+}
+img{
+   float: right;
+}
