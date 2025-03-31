@@ -1,5 +1,5 @@
 
-body {margin: 0%; background-color: #160020;
+body {margin: 0%; background-color: #000000;
   
 }
 
@@ -176,7 +176,7 @@ text-align: center;
 margin: 5%;
 padding:0px;
 left:45%;
-color: #073763;
+color: #031627;
 font-size:500%;
 
 
@@ -193,13 +193,13 @@ text-align: center;
 body h2{
    text-align: center;
    font-size: 200%;
-   border-bottom: #121212;
+   border-bottom: #031627;
    border-top: 0px;
    border-left: 0px;
    border-right: 0px;
    border-style: solid;
    padding-bottom: 5%;
-   color: #402d53;
+   color: #031627;
 }
 img{
    float: right;
