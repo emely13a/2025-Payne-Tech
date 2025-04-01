@@ -80,10 +80,10 @@ font-size:50%;
    text-transform: uppercase;
    color: #ffffff;
    border-style:solid;
-   border-top: 5px;
-   border-left: 5px;
-   border-right: 5px;
-   padding:20%;
+   border-top: 2px;
+   border-left: 2px;
+   border-right: 2px;
+   padding:10%;
   
   
 }
