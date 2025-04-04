@@ -65,77 +65,112 @@
 
 <div class="main">
 <h1>Memory</h1>
-<h3>Motherboard Specifications & Components</h3>
-  <h4>Key Specifications:</h4>
+<h3>Selecting the Right RAM</h3>
 <ul>
-<li>CPU Socket Type: Determines CPU compatibility.</li>
-<li>Memory Compatibility: Includes type, number of slots, and maximum supported memory.</li>
-<li>Expansion Slots: Defines the number and type of slots (PCI, PCIe, etc.).</li>
-<li>Onboard Devices: Integrated features like video, audio, or networking.</li>
+    <li><strong>Consult Motherboard Documentation</strong>: Ensures compatibility with memory type, capacity, and configuration.</li>
+    <li><strong>Online Compatibility Tools</strong>: Some websites allow system scanning for correct RAM selection.</li>
 </ul>
-<h3>Typical Components & Troubleshooting</h3>
-<h3>CPU Socket</h3>
+
+<h3>Key Memory Factors & Troubleshooting</h3>
+
+<h3>Memory Form (Packaging)</h3>
 <ul>
-<li>Function: Houses the CPU; must match the processor type and pin configuration.</li>   
-<li>Troubleshooting: Check motherboard model and manufacturer website for compatibility before upgrading.</li>
+    <li><strong>Function</strong>: Determines module size and memory standard (e.g., DDR3, DDR4).</li>
+    <li><strong>Troubleshooting</strong>: Incorrect form factor won’t fit or may have incompatible voltage.</li>
 </ul>
-<h3>Memory Slots</h3>
+
+<h3>Capacity</h3>
 <ul>
-       <li> Function: Allows adding RAM modules; must match memory type and speed. </li>
-       <li>Troubleshooting: Verify motherboard documentation for supported RAM specs.</li>
+    <li><strong>Function</strong>: Defines storage size (e.g., 4GB, 8GB, 16GB). Limited by:
+        <ul>
+            <li>Number of memory slots.</li>
+            <li>Maximum module size and system capacity.</li>
+            <li>OS limits (e.g., 32-bit OS supports ~4GB, 64-bit supports more).</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting</strong>: Ensure RAM module size matches motherboard specifications.</li>
 </ul>
-<h3>Expansion  Slots</h3>
+
+<h3>Frequency (Speed)</h3>
 <ul>
-       <li>Function: Enables adding components like graphics, network, and sound cards.</li>
-       <li>Types: PCI, PCI-X, PCIe, AGP</li>
-       <li>Troubleshooting: Ensure the slot type matches the expansion card being installed.</li>
+    <li><strong>Function</strong>: Determines how fast data moves between RAM and system.
+        <ul>
+            <li>Slower RAM reduces performance.</li>
+            <li>Faster RAM operates at motherboard’s maximum supported speed.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting</strong>:
+        <ul>
+            <li>If RAM runs slower, check if BIOS needs manual configuration.</li>
+            <li>BIOS updates may enable faster RAM support.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Integrated Components</h3>
+
+<h3>CAS Latency (CL) & Timing</h3>
 <ul>
-       <li>Size: 12" × 13"</li>
-       <li>Function: Built-in network, audio, video, and USB/FireWire ports.</li>
-       <li>Troubleshooting: If performance is inadequate, disable onboard features in BIOS/UEFI and use dedicated expansion cards.</li>
+    <li><strong>Function</strong>: Measures delay between data request and availability.
+        <ul>
+            <li>Lower CL = Faster memory (for same frequency).</li>
+            <li>Cannot directly compare CL between different RAM types.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting</strong>:
+        <ul>
+            <li>Manual BIOS tuning may optimize timing settings.</li>
+            <li>Higher clock speeds usually require higher CL values.</li>
+        </ul>
+    </li>
 </ul>
-<h3>I/O Connectors</h3>
+
+<h3>Error Correcting Code (ECC) vs. Non-ECC</h3>
 <ul>
-       <li>Back-panel ports for external peripherals. Common ports include:</li>
-       <ul><li>PS/2 (keyboard/mouse)</li><li>USB, Ethernet, audio jacks</li><li>Serial (COM), parallel ports</li></ul>
-       <li>Troubleshooting: If ports fail, check BIOS settings or update drivers.</li>
+    <li><strong>ECC RAM</strong>:
+        <ul>
+            <li>Detects & corrects data errors.</li>
+            <li>Used in servers; slower & more expensive.</li>
+            <li>Requires motherboard support.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting</strong>:
+        <ul>
+            <li>Do not mix ECC with non-ECC (disables error correction).</li>
+            <li>Verify motherboard supports ECC before purchase.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Internal Connectors</h3>
+
+<h3>Buffered (Registered) vs. Unbuffered RAM</h3>
 <ul>
-       <li>Function: Connect case components like fans, LEDs, and front panel ports.</li>
-       <li>Troubleshooting: Ensure proper placement of power and data connectors per motherboard manual.</li>
+    <li><strong>Buffered RAM</strong>:
+        <ul>
+            <li>Improves stability in high-memory systems.</li>
+            <li>Slower than unbuffered RAM.</li>
+            <li>Often used with ECC in servers.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting</strong>:
+        <ul>
+            <li>Buffered RAM must be supported by the motherboard.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Storage Connectors</h3>
+
+<h3>Single-Sided vs. Double-Sided RAM</h3>
 <ul>
-       <li>eSATA: Provides external SATA connectivity via expansion card.</li>
-       <li>M.2: Faster alternative to SATA SSDs; verify motherboard compatibility before installation.</li>
-       <li>Troubleshooting: Ensure M.2 slot supports desired storage type (NVMe vs. SATA).</li>
+    <li><strong>Function</strong>:
+        <ul>
+            <li><strong>Single-sided</strong>: Memory accessed all at once.</li>
+            <li><strong>Double-sided</strong>: Organized into two banks; system switches between them.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting</strong>:
+        <ul>
+            <li>Some older motherboards don’t support double-sided RAM.</li>
+            <li>Mixing single-sided and double-sided may cause compatibility issues.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Firmware (BIOS/UEFI)</h3>
-<ul><li>Function: Manages hardware initialization and system settings.</li>
-<li>Troubleshooting: Update firmware if experiencing hardware compatibility issues.</li>
-</ul>
-<h3>CMOS Battery</h3>
-<ul>
-       <li>Function: Maintains system clock and BIOS settings.</li>
-       <li>Troubleshooting: Replace if system loses date/time settings when powered off.</li>
-</ul>
-<h3>Chipset</h3>
-<ul>
-       <li>Function: Manages communication between CPU, memory, and peripherals.</li>
-       <li>Types:Intel: Platform Controller Hub (PCH) and AMD: Fusion Controller Hub (FCH)</li>
-       <li>Troubleshooting: Update chipset drivers for improved performance and compatibility.</li>
-</ul>
-       <h3>Documentation & Support</h3>
-       <ul>
-              <li>Function: Provides specifications, diagrams, and upgrade guidance.</li>
-              <li>Troubleshooting: Always refer to the support manual or manufacturer website when upgrading components.</li>
-       </ul>
-       
-  <h3>Diagram</h3>
-  <p>A typical motherboard includes the common connectors shown in the following diagram.</p>
     <img src="mboard.png" alt="graphic" height="50%" width="40%">
 </br>
 </br>
