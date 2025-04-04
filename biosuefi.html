@@ -65,78 +65,93 @@
 
 <div class="main">
 <h1>BIOS/UEFI</h1>
-<h3>Motherboard Specifications & Components</h3>
-  <h4>Key Specifications:</h4>
+<h3>UEFI (Unified Extensible Firmware Interface)</h3>
 <ul>
-<li>CPU Socket Type: Determines CPU compatibility.</li>
-<li>Memory Compatibility: Includes type, number of slots, and maximum supported memory.</li>
-<li>Expansion Slots: Defines the number and type of slots (PCI, PCIe, etc.).</li>
-<li>Onboard Devices: Integrated features like video, audio, or networking.</li>
+    <li><strong>Function:</strong> Modern replacement for BIOS; manages startup and loads the operating system.</li>
+    <li><strong>Advantages:</strong>
+        <ul>
+            <li>Faster boot times and better security against bootkits.</li>
+            <li>Supports drives larger than 2.2TB and 64-bit firmware drivers.</li>
+            <li>Compatible with both UEFI and BIOS hardware.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting:</strong>
+        <ul>
+            <li>Update (flash) UEFI firmware for new features and bug fixes.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Typical Components & Troubleshooting</h3>
-<h3>CPU Socket</h3>
+
+<h3>BIOS (Basic Input/Output System)</h3>
 <ul>
-<li>Function: Houses the CPU; must match the processor type and pin configuration.</li>   
-<li>Troubleshooting: Check motherboard model and manufacturer website for compatibility before upgrading.</li>
+    <li><strong>Function:</strong> Legacy firmware stored in ROM; initializes hardware and loads the OS.</li>
+    <li><strong>Key Facts:</strong>
+        <ul>
+            <li>Controls startup and system settings.</li>
+            <li>Can be updated (flashed) to support newer hardware.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting:</strong>
+        <ul>
+            <li>If BIOS fails, reset using manufacturer’s recovery process.</li>
+            <li>Ensure updates match motherboard specifications to prevent failures.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Memory Slots</h3>
+
+<h3>EEPROM (Electrically Erasable Programmable Read-Only Memory)</h3>
 <ul>
-       <li> Function: Allows adding RAM modules; must match memory type and speed. </li>
-       <li>Troubleshooting: Verify motherboard documentation for supported RAM specs.</li>
+    <li><strong>Function:</strong> Stores firmware (BIOS/UEFI); allows updates without hardware removal.</li>
+    <li><strong>Advantages:</strong>
+        <ul>
+            <li>Non-volatile; retains data without power.</li>
+            <li>Replaces older EPROM and CMOS storage.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting:</strong>
+        <ul>
+            <li>Corrupt firmware may require reflashing or motherboard replacement.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Expansion  Slots</h3>
+
+<h3>CMOS (Complementary Metal-Oxide Semiconductor)</h3>
 <ul>
-       <li>Function: Enables adding components like graphics, network, and sound cards.</li>
-       <li>Types: PCI, PCI-X, PCIe, AGP</li>
-       <li>Troubleshooting: Ensure the slot type matches the expansion card being installed.</li>
+    <li><strong>Function:</strong> Legacy term for system settings storage (now replaced by EEPROM).</li>
+    <li><strong>Key Facts:</strong>
+        <ul>
+            <li>Stores boot device order, system time, and hardware settings.</li>
+            <li>Powered by a small battery on the motherboard.</li>
+        </ul>
+    </li>
+    <li><strong>Troubleshooting:</strong>
+        <ul>
+            <li>If BIOS settings reset unexpectedly, replace the CMOS battery.</li>
+            <li>To reset BIOS passwords, remove and replace the jumper on the motherboard.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Integrated Components</h3>
+
+<h3>Startup Process</h3>
 <ul>
-       <li>Size: 12" × 13"</li>
-       <li>Function: Built-in network, audio, video, and USB/FireWire ports.</li>
-       <li>Troubleshooting: If performance is inadequate, disable onboard features in BIOS/UEFI and use dedicated expansion cards.</li>
+    <li>Power reaches the processor, which looks for BIOS/UEFI instructions.</li>
+    <li>BIOS/UEFI runs the <strong>Power-On Self-Test (POST)</strong> to check hardware integrity.</li>
+    <li>Identifies and configures system devices.</li>
+    <li>Searches for a bootable drive (based on boot order).</li>
+    <li>Loads the <strong>bootloader</strong> and transfers control to the operating system.</li>
 </ul>
-<h3>I/O Connectors</h3>
+
+<h3>Updating BIOS/UEFI</h3>
 <ul>
-       <li>Back-panel ports for external peripherals. Common ports include:</li>
-       <ul><li>PS/2 (keyboard/mouse)</li><li>USB, Ethernet, audio jacks</li><li>Serial (COM), parallel ports</li></ul>
-       <li>Troubleshooting: If ports fail, check BIOS settings or update drivers.</li>
+    <li><strong>Flashing:</strong> Download manufacturer updates and use their utility to rewrite firmware.</li>
+    <li><strong>Precautions:</strong>
+        <ul>
+            <li>Ensure the update matches your motherboard model.</li>
+            <li>Interruptions during flashing can permanently damage the firmware.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Internal Connectors</h3>
-<ul>
-       <li>Function: Connect case components like fans, LEDs, and front panel ports.</li>
-       <li>Troubleshooting: Ensure proper placement of power and data connectors per motherboard manual.</li>
-</ul>
-<h3>Storage Connectors</h3>
-<ul>
-       <li>eSATA: Provides external SATA connectivity via expansion card.</li>
-       <li>M.2: Faster alternative to SATA SSDs; verify motherboard compatibility before installation.</li>
-       <li>Troubleshooting: Ensure M.2 slot supports desired storage type (NVMe vs. SATA).</li>
-</ul>
-<h3>Firmware (BIOS/UEFI)</h3>
-<ul><li>Function: Manages hardware initialization and system settings.</li>
-<li>Troubleshooting: Update firmware if experiencing hardware compatibility issues.</li>
-</ul>
-<h3>CMOS Battery</h3>
-<ul>
-       <li>Function: Maintains system clock and BIOS settings.</li>
-       <li>Troubleshooting: Replace if system loses date/time settings when powered off.</li>
-</ul>
-<h3>Chipset</h3>
-<ul>
-       <li>Function: Manages communication between CPU, memory, and peripherals.</li>
-       <li>Types:Intel: Platform Controller Hub (PCH) and AMD: Fusion Controller Hub (FCH)</li>
-       <li>Troubleshooting: Update chipset drivers for improved performance and compatibility.</li>
-</ul>
-       <h3>Documentation & Support</h3>
-       <ul>
-              <li>Function: Provides specifications, diagrams, and upgrade guidance.</li>
-              <li>Troubleshooting: Always refer to the support manual or manufacturer website when upgrading components.</li>
-       </ul>
-       
-  <h3>Diagram</h3>
-  <p>A typical motherboard includes the common connectors shown in the following diagram.</p>
-    <img src="mboard.png" alt="graphic" height="50%" width="40%">
+    <img src="biosuefi.png" alt="graphic" height="45%" width="50%">
 </br>
 </br>
        
