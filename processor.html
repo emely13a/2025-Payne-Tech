@@ -65,77 +65,125 @@
 
 <div class="main">
 <h1>Processors (CPUS)</h1>
-<h3>Motherboard Specifications & Components</h3>
-  <h4>Key Specifications:</h4>
+<h3>Processor Concepts</h3>
+
+<h3>Choosing a CPU</h3>
 <ul>
-<li>CPU Socket Type: Determines CPU compatibility.</li>
-<li>Memory Compatibility: Includes type, number of slots, and maximum supported memory.</li>
-<li>Expansion Slots: Defines the number and type of slots (PCI, PCIe, etc.).</li>
-<li>Onboard Devices: Integrated features like video, audio, or networking.</li>
+    <li><strong>Compatibility:</strong> Ensure the processor matches the motherboard’s socket and specifications.</li>
+    <li><strong>Manufacturers:</strong> Intel and AMD are the two main CPU producers.
+        <ul>
+            <li>Intel has a larger market share, while AMD often offers lower-cost alternatives.</li>
+            <li>Performance and features vary across models.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Typical Components & Troubleshooting</h3>
-<h3>CPU Socket</h3>
+
+<h3>Key Processor Features & Considerations</h3>
+
+<h3>32-bit vs. 64-bit Processors</h3>
 <ul>
-<li>Function: Houses the CPU; must match the processor type and pin configuration.</li>   
-<li>Troubleshooting: Check motherboard model and manufacturer website for compatibility before upgrading.</li>
+    <li>64-bit processors support more memory and perform better with 64-bit applications.</li>
+    <li><strong>Instruction Sets:</strong>
+        <ul>
+            <li>32-bit CPUs use IA-32 (x86).</li>
+            <li>64-bit CPUs use x86-64 (AMD64, Intel 64).</li>
+        </ul>
+    </li>
+    <li><strong>Compatibility:</strong>
+        <ul>
+            <li>32-bit apps run on 64-bit processors using built-in hardware support.</li>
+            <li>64-bit apps require a 64-bit OS to utilize full performance benefits.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Memory Slots</h3>
+
+<h3>Multi-Core Processors</h3>
 <ul>
-       <li> Function: Allows adding RAM modules; must match memory type and speed. </li>
-       <li>Troubleshooting: Verify motherboard documentation for supported RAM specs.</li>
+    <li>Dual-core, quad-core, and higher-core processors allow for multitasking and better performance.</li>
+    <li>Multi-core processors share a single motherboard socket, while multi-processor systems use multiple sockets.</li>
+    <li>Some applications are optimized for multi-core performance.</li>
 </ul>
-<h3>Expansion  Slots</h3>
+
+<h3>Processor Speed (Clock Rate)</h3>
 <ul>
-       <li>Function: Enables adding components like graphics, network, and sound cards.</li>
-       <li>Types: PCI, PCI-X, PCIe, AGP</li>
-       <li>Troubleshooting: Ensure the slot type matches the expansion card being installed.</li>
+    <li>Measured in MHz or GHz; faster speeds mean better performance.</li>
+    <li>Motherboard must support the CPU’s speed.</li>
+    <li>Some motherboards allow manual speed configuration in BIOS/CMOS.</li>
 </ul>
-<h3>Integrated Components</h3>
+
+<h3>Cache Memory (L1, L2, L3, L4)</h3>
 <ul>
-       <li>Size: 12" × 13"</li>
-       <li>Function: Built-in network, audio, video, and USB/FireWire ports.</li>
-       <li>Troubleshooting: If performance is inadequate, disable onboard features in BIOS/UEFI and use dedicated expansion cards.</li>
+    <li><strong>L1 Cache:</strong> Smallest and fastest, stores processor instructions.</li>
+    <li><strong>L2 Cache:</strong> Stores both instructions and data; may be shared or exclusive per core.</li>
+    <li><strong>L3 Cache:</strong> Larger and shared across cores for improved multi-core efficiency.</li>
+    <li><strong>L4 Cache:</strong> Dynamically shared between CPU and integrated GPU.</li>
+    <li>More cache = Better performance (if other specs are equal).</li>
 </ul>
-<h3>I/O Connectors</h3>
+
+<h3>Process Size (Fabrication Technology)</h3>
 <ul>
-       <li>Back-panel ports for external peripherals. Common ports include:</li>
-       <ul><li>PS/2 (keyboard/mouse)</li><li>USB, Ethernet, audio jacks</li><li>Serial (COM), parallel ports</li></ul>
-       <li>Troubleshooting: If ports fail, check BIOS settings or update drivers.</li>
+    <li>Measured in nanometers (nm), smaller process sizes mean:
+        <ul>
+            <li>More transistors per chip.</li>
+            <li>Lower power consumption.</li>
+            <li>Higher efficiency and performance.</li>
+        </ul>
+    </li>
 </ul>
-<h3>Internal Connectors</h3>
+
+<h3>Hyper-Threading (HT Technology)</h3>
 <ul>
-       <li>Function: Connect case components like fans, LEDs, and front panel ports.</li>
-       <li>Troubleshooting: Ensure proper placement of power and data connectors per motherboard manual.</li>
+    <li>Intel’s Hyper-Threading allows one core to process two threads simultaneously.</li>
+    <li>Multithreading applications maximize performance by utilizing multiple cores or hyper-threading.</li>
 </ul>
-<h3>Storage Connectors</h3>
+
+<h3>Throttling</h3>
 <ul>
-       <li>eSATA: Provides external SATA connectivity via expansion card.</li>
-       <li>M.2: Faster alternative to SATA SSDs; verify motherboard compatibility before installation.</li>
-       <li>Troubleshooting: Ensure M.2 slot supports desired storage type (NVMe vs. SATA).</li>
+    <li>Reduces CPU power usage and heat output when not under heavy load.</li>
+    <li>Common in mobile processors for energy efficiency.</li>
 </ul>
-<h3>Firmware (BIOS/UEFI)</h3>
-<ul><li>Function: Manages hardware initialization and system settings.</li>
-<li>Troubleshooting: Update firmware if experiencing hardware compatibility issues.</li>
-</ul>
-<h3>CMOS Battery</h3>
+
+<h3>Overclocking</h3>
 <ul>
-       <li>Function: Maintains system clock and BIOS settings.</li>
-       <li>Troubleshooting: Replace if system loses date/time settings when powered off.</li>
+    <li>Manually increasing CPU speed beyond factory limits for extra performance.</li>
+    <li><strong>Risks:</strong> Higher heat, reduced lifespan, and voided warranty.</li>
+    <li>Turbo Boost (Intel) dynamically increases clock speed when needed.</li>
 </ul>
-<h3>Chipset</h3>
+
+<h3>Mobile Processors</h3>
 <ul>
-       <li>Function: Manages communication between CPU, memory, and peripherals.</li>
-       <li>Types:Intel: Platform Controller Hub (PCH) and AMD: Fusion Controller Hub (FCH)</li>
-       <li>Troubleshooting: Update chipset drivers for improved performance and compatibility.</li>
+    <li>Optimized for low power consumption and reduced heat output.</li>
+    <li>Found in laptops, tablets, and smartphones.</li>
 </ul>
-       <h3>Documentation & Support</h3>
-       <ul>
-              <li>Function: Provides specifications, diagrams, and upgrade guidance.</li>
-              <li>Troubleshooting: Always refer to the support manual or manufacturer website when upgrading components.</li>
-       </ul>
-       
-  <h3>Diagram</h3>
-  <p>A typical motherboard includes the common connectors shown in the following diagram.</p>
+
+<h3>Virtualization Support</h3>
+<ul>
+    <li>Enables running multiple OS instances on one machine.</li>
+    <li>Modern CPUs include hardware-assisted virtualization:
+        <ul>
+            <li>Intel VT (Virtualization Technology)</li>
+            <li>AMD-V (AMD Virtualization)</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Integrated Memory Controller & GPU</h3>
+<ul>
+    <li>Improves memory access speed and graphics performance.</li>
+    <li>Useful for budget builds that don’t require a dedicated GPU.</li>
+</ul>
+
+<h3>Cooling & Heat Management</h3>
+<ul>
+    <li>Cooling is essential to prevent overheating.</li>
+    <li><strong>Cooling options include:</strong>
+        <ul>
+            <li>Heat sink & fan (air cooling).</li>
+            <li>Liquid cooling for high-performance CPUs.</li>
+            <li>Thermal paste to improve heat transfer.</li>
+        </ul>
+    </li>
+</ul>
     <img src="mboard.png" alt="graphic" height="50%" width="40%">
 </br>
 </br>
